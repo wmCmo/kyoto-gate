@@ -1,0 +1,6 @@
+execute store result score #tips ky.var if entity @e[type=marker,tag=ky.tip]
+execute store result score #nodes ky.var if entity @e[type=marker,tag=ky.node]
+execute store result score #houses ky.var if entity @e[type=marker,tag=ky.house]
+execute store result score #plots ky.var if entity @e[type=marker,tag=ky.plot]
+tellraw @a [{"text":"Kyoto Gate: ","color":"gold"},{"score":{"name":"#nodes","objective":"ky.var"},"color":"yellow"},{"text":" gates, ","color":"gray"},{"score":{"name":"#tips","objective":"ky.var"},"color":"yellow"},{"text":" growing streets, ","color":"gray"},{"score":{"name":"#houses","objective":"ky.var"},"color":"yellow"},{"text":" houses, ","color":"gray"},{"score":{"name":"#plots","objective":"ky.var"},"color":"yellow"},{"text":" plots waiting","color":"gray"}]
+tellraw @a [{"text":"Blessings left: ","color":"gray"},{"score":{"name":"#fuel","objective":"ky.var"},"color":"yellow"}]

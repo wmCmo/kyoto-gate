@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "Kyoto Gate: a torii that grows a Kyoto town across any terrain",
+    "min_format": 121,
+    "max_format": 121
+  }
+}

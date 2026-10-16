@@ -1,0 +1,16 @@
+{
+  "values": [
+    "#minecraft:replaceable",
+    "#minecraft:flowers",
+    "#minecraft:leaves",
+    "#minecraft:saplings",
+    "minecraft:sugar_cane",
+    "minecraft:bamboo",
+    "minecraft:sweet_berry_bush",
+    "minecraft:cactus",
+    "minecraft:pumpkin",
+    "minecraft:melon",
+    "minecraft:moss_carpet",
+    "minecraft:pink_petals"
+  ]
+}

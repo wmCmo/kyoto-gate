@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BBB",
+    "RLR",
+    "RSR"
+  ],
+  "key": {
+    "B": "minecraft:polished_blackstone",
+    "R": "minecraft:red_concrete",
+    "L": "minecraft:lantern",
+    "S": "minecraft:cherry_sapling"
+  },
+  "result": {
+    "id": "minecraft:red_dye",
+    "count": 1,
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Torii Seed",
+        "color": "gold",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Hold right-click to plant a gate.",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "purpose unknown",
+          "font": "minecraft:alt",
+          "color": "#b8f62a",
+          "italic": false
+        }
+      ],
+      "minecraft:consumable": {
+        "consume_seconds": 2.0,
+        "animation": "block",
+        "sound": "minecraft:block.amethyst_block.chime",
+        "has_consume_particles": false
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:max_stack_size": 16
+    }
+  }
+}

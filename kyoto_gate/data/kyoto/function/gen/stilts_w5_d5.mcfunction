@@ -1,0 +1,22 @@
+# Stilts under a 5x5 house built out over a drop
+fill ^-2 ^-2 ^1 ^-2 ^-25 ^1 dark_oak_log replace #kyoto:fillable
+fill ^-2 ^-2 ^3 ^-2 ^-25 ^3 dark_oak_log replace #kyoto:fillable
+fill ^-2 ^-2 ^5 ^-2 ^-25 ^5 dark_oak_log replace #kyoto:fillable
+fill ^ ^-2 ^1 ^ ^-25 ^1 dark_oak_log replace #kyoto:fillable
+fill ^ ^-2 ^3 ^ ^-25 ^3 dark_oak_log replace #kyoto:fillable
+fill ^ ^-2 ^5 ^ ^-25 ^5 dark_oak_log replace #kyoto:fillable
+fill ^2 ^-2 ^1 ^2 ^-25 ^1 dark_oak_log replace #kyoto:fillable
+fill ^2 ^-2 ^3 ^2 ^-25 ^3 dark_oak_log replace #kyoto:fillable
+fill ^2 ^-2 ^5 ^2 ^-25 ^5 dark_oak_log replace #kyoto:fillable
+fill ^-2 ^-2 ^1 ^2 ^-2 ^1 dark_oak_wood replace #kyoto:fillable
+fill ^-2 ^-2 ^5 ^2 ^-2 ^5 dark_oak_wood replace #kyoto:fillable
+fill ^-2 ^-2 ^1 ^-2 ^-2 ^5 dark_oak_wood replace #kyoto:fillable
+fill ^2 ^-2 ^1 ^2 ^-2 ^5 dark_oak_wood replace #kyoto:fillable
+fill ^-2 ^-6 ^1 ^2 ^-6 ^1 dark_oak_wood replace #kyoto:fillable
+fill ^-2 ^-6 ^5 ^2 ^-6 ^5 dark_oak_wood replace #kyoto:fillable
+fill ^-2 ^-6 ^1 ^-2 ^-6 ^5 dark_oak_wood replace #kyoto:fillable
+fill ^2 ^-6 ^1 ^2 ^-6 ^5 dark_oak_wood replace #kyoto:fillable
+fill ^-2 ^-10 ^1 ^2 ^-10 ^1 dark_oak_wood replace #kyoto:fillable
+fill ^-2 ^-10 ^5 ^2 ^-10 ^5 dark_oak_wood replace #kyoto:fillable
+fill ^-2 ^-10 ^1 ^-2 ^-10 ^5 dark_oak_wood replace #kyoto:fillable
+fill ^2 ^-10 ^1 ^2 ^-10 ^5 dark_oak_wood replace #kyoto:fillable

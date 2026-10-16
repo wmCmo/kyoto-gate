@@ -1,0 +1,6 @@
+# build output that belongs in a GitHub Release, not the repo
+release/
+
+# Python
+__pycache__/
+*.pyc

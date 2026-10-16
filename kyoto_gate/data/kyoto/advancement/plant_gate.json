@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "plant": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:red_dye"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "kyoto:seed/plant"
+  }
+}
