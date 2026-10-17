@@ -1,0 +1,35 @@
+# Push a tag like v1.0 and this attaches kyoto_gate.zip to a GitHub Release.
+# The newest one is always at
+#   https://github.com/wmCmo/kyoto-gate/releases/latest/download/kyoto_gate.zip
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # pack.mcmeta must sit at the root of the zip, or Minecraft won't load it
+      - name: Zip the pack
+        run: |
+          cd kyoto_gate
+          test -f pack.mcmeta
+          zip -r -9 -X ../kyoto_gate.zip pack.mcmeta data
+          cd ..
+          unzip -l kyoto_gate.zip | tail -1
+
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" kyoto_gate.zip \
+            --title "Kyoto Gate $GITHUB_REF_NAME" \
+            --notes "For Minecraft Java Edition 26.3. Put kyoto_gate.zip in your world's datapacks folder, run /reload, then craft a Torii Seed or run /function kyoto:gate." \
+            --generate-notes

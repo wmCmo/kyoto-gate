@@ -2,6 +2,15 @@
 
 A Minecraft data pack (Java Edition 26.3, data format 121). You plant one torii, and a Kyoto town grows out of it across whatever terrain is there. Streets come first, the way the Upside Down's vines do, and houses follow the streets.
 
+## Install
+
+1. Download **[kyoto_gate.zip](https://github.com/wmCmo/kyoto-gate/releases/latest/download/kyoto_gate.zip)** (the latest release).
+2. Put the zip in your world's `datapacks` folder: `saves/<your world>/datapacks`.
+3. In the game, run `/reload`.
+4. Craft a Torii Seed, or run `/function kyoto:gate`.
+
+Releases are built by `.github/workflows/release.yml` whenever a `v*` tag is pushed.
+
 ## What grows
 
 - **Streets** of mixed stone creep out from the gate. They follow the ground, become stone stairs on slopes, cross rivers on bridges with piers and lanterns, and fell trees in their way. Near the gate they are wide; they narrow to single stones and then stepping stones at the edge. Streets branch, cross each other to make crossroads, or end in T-junctions.

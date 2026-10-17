@@ -67,7 +67,9 @@ def _payload(v):
 def write_nbt(path, root):
     t, p = _payload(root)
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with gzip.open(path, 'wb') as f:
+    # mtime=0 and no file name in the gzip header: an unchanged structure rebuilds to identical bytes,
+    # so git only sees the structures that really changed
+    with open(path, 'wb') as raw, gzip.GzipFile(filename='', fileobj=raw, mode='wb', mtime=0) as f:
         f.write(bytes([t]) + _str('') + p)
 
 
@@ -494,6 +496,7 @@ def pagoda():
     cur = 1
     for n, (lo, hi, h) in enumerate(PAGODA_TIERS):
         mid = (lo + hi) // 2
+        t.fill(lo + 1, cur, lo + 1, hi - 1, cur + h - 1, hi - 1, 'air')  # each storey clears its own room
         for y in range(cur, cur + h):
             for x in range(lo, hi + 1):
                 for z in range(lo, hi + 1):

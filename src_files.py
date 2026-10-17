@@ -38,14 +38,18 @@ tag('block', 'kyoto:clearable', [
     'minecraft:sugar_cane', 'minecraft:bamboo', 'minecraft:sweet_berry_bush', 'minecraft:cactus',
     'minecraft:pumpkin', 'minecraft:melon', 'minecraft:moss_carpet', 'minecraft:pink_petals',
 ])
+# 26.x: #minecraft:dirt is only dirt, coarse dirt and rooted dirt. Grass, podzol and mycelium moved to
+# #minecraft:grass_blocks, mud to #minecraft:mud, so clearing ground has to name them too.
 tag('block', 'kyoto:garden_clear', [
     '#minecraft:replaceable', '#minecraft:flowers', '#minecraft:saplings', '#minecraft:dirt', '#minecraft:sand',
+    '#minecraft:grass_blocks', '#minecraft:mud',
     '#minecraft:base_stone_overworld', '#minecraft:terracotta', 'minecraft:gravel', 'minecraft:snow_block',
     'minecraft:clay', 'minecraft:sandstone', 'minecraft:red_sandstone', 'minecraft:sugar_cane', 'minecraft:pumpkin',
 ])
 tag('block', 'kyoto:fillable', ['minecraft:air', 'minecraft:cave_air', 'minecraft:water', '#kyoto:clearable'])
 tag('block', 'kyoto:diggable', [
-    '#kyoto:clearable', '#minecraft:dirt', '#minecraft:sand', '#minecraft:base_stone_overworld', '#minecraft:terracotta',
+    '#kyoto:clearable', '#minecraft:dirt', '#minecraft:grass_blocks', '#minecraft:mud', '#minecraft:sand',
+    '#minecraft:base_stone_overworld', '#minecraft:terracotta',
     'minecraft:gravel', 'minecraft:snow_block', 'minecraft:powder_snow', 'minecraft:clay',
     'minecraft:sandstone', 'minecraft:red_sandstone', 'minecraft:dirt_path',
 ])
